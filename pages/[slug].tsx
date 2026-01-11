@@ -13,6 +13,7 @@ export async function getServerSideProps(context: any) {
         permanent: false,
         destination: domain + "/" + context.params.slug,
       },
+      
     };
   }
   const data = await fetchMeta(domain + "/" + context.params.slug);
